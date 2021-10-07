@@ -3,10 +3,6 @@
     padding: 0;
 }
 
-body {
-    color: #fff;
-}
-
 .grid_content {
     display: grid;
     grid-template-columns: repeat(12, 60px);
@@ -42,7 +38,7 @@ header {
 .header_text h2 {
     width: 245px;
     height: 18px;
-    font-family: HelveticaNeue;
+    font-family: "Helvetica Neue";
     font-size: 15px;
     line-height: 18px;
     color: #FFFFFF;
@@ -54,19 +50,27 @@ header {
 main {
     width: 940px;
     display: flex;
+    background-color: #fff;
+    position: relative;
 }
 
 .segment_images {
     width: 620px;
-    overflow: hidden;
+}
+
+.segment_images img {
+    margin: 0 5px 0 5px;
+    border-radius: 5px;
 }
 
 .segment_text {
-    margin-left: 2%;
+    padding-left: 2%;
+    background-color: #fff;
+    position: relative;
 }
 
 .segment_header h3 {
-    font-family: Source Sans Pro;
+    font-family: "Source Sans Pro";
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
@@ -80,7 +84,7 @@ main {
 }
 
 .segment_paragraph p {
-    font-family: Source Sans Pro;
+    font-family: "Source Sans Pro";
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -99,28 +103,28 @@ main {
 }
 
 .top_row img.image7 {
-    margin: 0 5px 0 5px;
-    border-radius: 5px;
+    width: 180px; 
+    height: 200px;
 }
 
 .top_row img.image6 {
-    margin: 0 5px 0 5px;
-    border-radius: 5px;
+    width: 120px; 
+    height: 200px;
 }
 
 .top_row img.image9 {
-    margin: 0 5px 0 5px;
-    border-radius: 5px;
+    width: 220px;
+    height: 200px;
 }
 
 .top_row img.image8 {
-    margin: 0 5px 0 5px;
-    border-radius: 5px;
+    width: 180px;
+    height: 200px;
 }
 
 .top_row img.image5 {
-    margin: 0 5px 0 5px;
-    border-radius: 5px;
+    width: 260px;
+    height: 200px;
 }
 
 .bottom {
@@ -137,23 +141,23 @@ main {
 }
 
 .bottom_row img.image4 {
-    margin: 0 5px 0 5px;
-    border-radius: 5px;
+    width: 220px; 
+    height: 200px;
 }
 
 .bottom_row img.image1 {
-    margin: 0 5px 0 5px;
-    border-radius: 5px;
+    width: 260px; 
+    height: 200px;
 }
 
 .bottom_row img.image2 {
-    margin: 0 5px 0 5px;
-    border-radius: 5px;
+    width: 120px; 
+    height: 200px;
 }
 
 .bottom_row img.image3 {
-    margin: 0 5px 0 5px;
-    border-radius: 5px;
+    width: 180px; 
+    height: 200px;
 }
 
 .arrows {
@@ -188,7 +192,6 @@ main {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    top: 35%;
 }
 
 .arrow_right {
@@ -215,7 +218,6 @@ main {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    top: 40%;
 }
 
 /*-------------------FOOTER-------------*/
@@ -230,7 +232,7 @@ footer {
 }
 
 .footer_text h2 {
-    font-family: HelveticaNeue;
+    font-family: "Helvetica Neue";
     font-size: 15px;
     line-height: 18px;
     color: #FFFFFF;

@@ -1,0 +1,25 @@
+{
+  "name": "FrontendSlider",
+  "version": "1.0.0",
+  "description": "Frontend Slider created with HTML, CSS and jQuery.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d scripts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxloncar/FrontendSlider.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maxloncar/FrontendSlider/issues"
+  },
+  "homepage": "https://github.com/maxloncar/FrontendSlider#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
+}

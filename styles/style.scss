@@ -1,36 +1,12 @@
-$colors: (
-    headerBgColor: #DDDDDD,
-    footerBgColor: #DDDDDD,
-    headerTextColor: #FFFFFF,
-    footerTextColor: #FFFFFF,
-    mainBgColor: #FFFFFF,
-    segmentHeaderTextColor: #134880,
-    segmentParagraphTextColor: #484A4C,
-    arrowHoverBorderColor: #134880,
-    arrowBorderColor: #DDDDDD,
-    arrowBackgroundColor: #FFFFFF
-);
-
-@function getColor($colorName) {
-    @return map-get($colors, $colorName)
-}
-
-$fonts: (
-    headerFooterFontFamily: 'Helvetica Neue',
-    mainFontFamily: 'Source Sans Pro'
-);
-
-@function getFontFamily($fontFamily) {
-    @return map-get($fonts, $fontFamily)
-}
+@import "./variables";
 
 @mixin headerBackgroundBorderRadius {
-    background-color: getColor(headerBgColor);
+    background-color: $headerBgColor;
     border-radius: $headerBorderRadius;
 }
 
 @mixin footerBackgroundBorderRadius {
-    background-color: getColor(footerBgColor);
+    background-color: $footerBgColor;
     border-radius: $footerBorderRadius;
 }
 
@@ -42,11 +18,11 @@ $fonts: (
 @mixin arrow {
     width: 60px;
     height: 60px;
-    border: 1px solid getColor(arrowBorderColor);
+    border: 1px solid $arrowBorderColor;
     box-sizing: border-box;
     border-radius: 5px;
     margin: 0 0 10px 61%;
-    background: getColor(arrowBackgroundColor);
+    background: $arrowBackgroundColor;
 }
 
 @mixin arrowImage {
@@ -57,13 +33,9 @@ $fonts: (
 }
 
 @mixin arrowHover {
-    border: 1px solid getColor(arrowHoverBorderColor);
+    border: 1px solid $arrowHoverBorderColor;
     cursor: pointer;
 }
-
-$headerBorderRadius: 0px 0px 5px 5px;
-$footerBorderRadius: 0px 0px 5px 5px;
-$gridGap: 20px;
 
 * {
     margin: 0;
@@ -98,10 +70,10 @@ $gridGap: 20px;
             h2 {
                 width: 245px;
                 height: 18px;
-                font-family: getFontFamily(headerFontFamily);
+                font-family: $headerFontFamily;
                 font-size: 15px;
                 line-height: 18px;
-                color: getColor(headerTextColor);
+                color: $headerTextColor;
                 margin: 6% 0 0 13%;
             }
         }
@@ -110,7 +82,7 @@ $gridGap: 20px;
     main {
         width: 940px;
         display: flex;
-        background: getColor(mainBgColor);
+        background: $mainBgColor;
         position: relative;
 
         .segment_images {
@@ -193,7 +165,7 @@ $gridGap: 20px;
                     width: 155px;
                     flex-direction: column;
                     position: relative;
-                    background: getColor(arrowBackgroundColor);
+                    background: $arrowBackgroundColor;
 
                     .arrow_left {
                         @include arrow();
@@ -232,17 +204,17 @@ $gridGap: 20px;
 
         .segment_text {
             padding-left: 2%;
-            background: getColor(mainBgColor);
+            background: $mainBgColor;
             position: relative;
 
             .segment_header h3 {
-                font-family: getFontFamily(mainFontFamily);
+                font-family: $mainFontFamily;
                 font-style: normal;
                 font-weight: bold;
                 font-size: 32px;
                 line-height: 40px;
                 letter-spacing: -0.2px;
-                color: getColor(segmentHeaderTextColor);
+                color: $segmentHeaderTextColor;
                 margin: 0 0 20px 0;
                 width: 300.93px;
                 height: 120px;
@@ -250,13 +222,13 @@ $gridGap: 20px;
             }
 
             .segment_paragraph p {
-                font-family: getFontFamily(mainFontFamily);
+                font-family: $mainFontFamily;
                 font-style: normal;
                 font-weight: normal;
                 font-size: 18px;
                 line-height: 26px;
                 letter-spacing: -0.2px;
-                color: getColor(segmentParagraphTextColor);
+                color: $segmentParagraphTextColor;
                 width: 300.93px;
                 height: 156px;
             }
@@ -271,10 +243,10 @@ $gridGap: 20px;
         @include footerBackgroundBorderRadius();
 
         .footer_text h2 {
-            font-family: getFontFamily(footerFontFamily);
+            font-family: $footerFontFamily;
             font-size: 15px;
             line-height: 18px;
-            color: getColor(footerTextColor);
+            color: $footerTextColor;
             width: 245px;
             height: 18px;
             margin: 5% 0 0 8.5%;

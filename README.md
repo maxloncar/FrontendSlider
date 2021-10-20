@@ -1,2 +1,2 @@
 # FrontendSlider
-Frontend Slider created with HTML, SASS/CSS and jQuery.
+Frontend Slider created with HTML, CSS and jQuery.

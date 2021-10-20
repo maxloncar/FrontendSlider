@@ -6,10 +6,12 @@ $(document).ready(function () {
 
     var slideRight = function slideRight() {
         $('.arrow_right').removeClass('active');
+        $('.arrow_left').removeClass('active');
         topRow.animate({ left: $('.top_slide').last().width() + 10 }, 800, function () {
             topRow.css('left', '0px');
             $('.top_slide').first().before($('.top_slide').last());
             $('.arrow_right').addClass('active');
+            $('.arrow_left').addClass('active');
         });
         botRow.animate({ left: $('.bot_slide').last().width() + 10 }, 800, function () {
             botRow.css('left', '0px');
@@ -19,6 +21,7 @@ $(document).ready(function () {
 
     var slideLeft = function slideLeft() {
         $('.arrow_left').removeClass('active');
+        $('.arrow_right').removeClass('active');
         var top_item_width = $('.top_slide').first().width() + 10;
         var bot_item_width = $('.bot_slide').first().width() + 10;
 
@@ -26,6 +29,7 @@ $(document).ready(function () {
         topRow.css({ 'left': top_item_width + 'px' });
         topRow.animate({ 'left': 0 }, 800, function () {
             $('.arrow_left').addClass('active');
+            $('.arrow_right').addClass('active');
         });
 
         $('.bot_slide').last().after($('.bot_slide').first());

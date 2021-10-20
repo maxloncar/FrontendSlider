@@ -92,10 +92,30 @@
                 display: flex;
                 position: relative;
                 width: fit-content;
-                margin: 0 0 10px -62%;
+                margin: 0 0 10px -195%;
 
                 img {
                    @include imageMarginBorderRadius();
+                }
+
+                img.image1 {
+                    width: 260px; 
+                    height: 200px;
+                }
+
+                img.image2 {
+                    width: 120px; 
+                    height: 200px;
+                }
+
+                img.image3 {
+                    width: 180px; 
+                    height: 200px;
+                }
+
+                img.image4 {
+                    width: 220px; 
+                    height: 200px;
                 }
 
                 img.image7 {
@@ -132,7 +152,7 @@
                     display: flex;
                     position: relative;
                     width: fit-content;
-                    margin: 0 0 60px -57%;
+                    margin: 0 0 60px -220%;
                     overflow: hidden;
 
                     img {
@@ -156,6 +176,31 @@
 
                     img.image3 {
                         width: 180px; 
+                        height: 200px;
+                    }
+
+                    img.image5 {
+                        width: 260px;
+                        height: 200px;
+                    }
+
+                    img.image6 {
+                        width: 120px; 
+                        height: 200px;
+                    }
+
+                    img.image7 {
+                        width: 180px; 
+                        height: 200px;
+                    }
+
+                    img.image8 {
+                        width: 180px;
+                        height: 200px;
+                    }
+
+                    img.image9 {
+                        width: 220px;
                         height: 200px;
                     }
                 }
